@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Futura";
+  src: url('FuturaRegular.eot');
+  src: url('FuturaRegular.eot?#iefix') format('embedded-opentype'),
+       url('FuturaRegular.woff') format('woff'),
+       url('FuturaRegular.ttf') format('truetype'),
+}
+@font-face {
+  font-family: "Futura";
+  font-weight: bold;
+  src: url('FuturaBold.eot');
+  src: url('FuturaBold.eot?#iefix') format('embedded-opentype'),
+       url('FuturaBold.woff') format('woff'),
+       url('FuturaBold.ttf') format('truetype'),
+
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AVITO Redesign</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      var fnth1h2 = ["'Playfair Display', serif","'Istok Web', sans-serif","'Tinos', serif","'Open Sans', sans-serif","'PT Serif', serif","'Ubuntu', sans-serif","'Exo 2', sans-serif","'Roboto Slab', serif"];
+      var fntpli =["'Open Sans', sans-serif","'Lora', serif","'Open Sans', sans-serif","'Playfair Display', serif","'Roboto Slab', serif","'Lora', serif","'Ubuntu', sans-serif","'Open Sans', sans-serif"];
+
+      // $('h1').css('font-family', fnth1h2[0]);
+
+      function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      $(document).ready(function(){
+        $("#fontroulette").click(function(){
+          var rnd = getRandomInt(0,7);
+          $("h1,h2").css("font-family",fnth1h2[rnd]);
+          $("p,li").css("font-family",fntpli[rnd]);
+        });
+      });
+
+    </script>
+  </head>
+
+  <body>
+
+    <h1> <a href="#" id="fontroulette">Редизайн Авито</a></h1>
+    <h2>Какую проблему/задачу/потребность решает проект?</h2>
+
+    <ul>
+      <li>Устаревший, некрасивый визуальный дизайн веб-версии (одна только карта чего стоит)</li>
+      <div class="imgback">
+        <img src="images/map.png" width="500px">
+      </div>
+      <li>Много проблем по UX (чего только стоит выбор региона на карте РФ&nbsp;:)</li>
+      <li>Разный пользовательский опыт в веб и мобильной версии</li>
+      <li>Чужеродные баннеры (кажутся частью сайта из-за одинакового фона) и раздражают</li>
+      <div class="imgback">
+        <img src="images/image3.png" width="500px">
+      </div>
+      <li>Call to action "Найти" выполнен как поле для ввода и dropdown</li>
+      <div class="imgback">
+        <img src="images/image6.png" width="500px">
+      </div>
+      <li>Категории объявлений и города визуально сделаны одинаково (цифры справа тоже не&nbsp;очевидны):</li>
+      <div class="imgback">
+        <img src="images/image5.png" width="500px">
+      </div>
+      <li>Желтое выделение неочевидно (я не настраивал никаких фильтров)</li>
+      <div class="imgback">
+        <img src="images/image4.png" width="500px">
+      </div>
+
+    </ul>
+    <br>
+    <p>
+      Задача организации, в особенности же укрепление и развитие структуры в значительной степени обуславливает создание существенных финансовых и административных условий. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения новых предложений. С другой стороны сложившаяся структура организации требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт консультация с широким активом влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.
+    </p>
+    <br>
+    <h2>Целевая аудитория</h2>
+    <p>Активное население РФ/СНГ. Решается проблема оборота б/у вещей безопасным способом.</p>
+
+    <h2>Конкурентная среда</h2>
+    <ul>
+      <li><a href="https://youla.io/">Юла</a> от Mail.ru Group</li>
+      <li><a href="https://www.m24.ru/articles/%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81/21122015/92983">Яндекс.Вертикали</a></li>
+      <li><a href="https://olx.ua" target="_blank">OLX.UA</a> в Украине</li>
+    </ul>
+    <br>
+
+    <h2>User Stories</h2>
+<!--Comments are made with Cmd + "/" подсказки: TODO FIXME NOTE REVIEW-->
+
+    <ul>
+      <li>Я, как владелец ненужных вещей, хочу продавать их быстро и по лучшей цене, чтобы получать профит.</li>
+      <li>Я, как владелец ненужных вещей, хочу отдавать их бесплатно и удобно для меня, чтобы вносить свой вклад в благотворительность</li>
+      <li>Я, как покупатель, хочу покупать качественные вещи по цене ниже новых, чтобы сэкономить, и хочу быть уверен в безопасности сделки</li>
+      <li>Я, как владелец ресурса, хочу увеличивать базу пользователей и получать прибыль за счет рекламы и платных объявлений (процентов со сделки?)</li>
+    </ul>
+
+    <br>
+    <h2>Решение</h2>
+    <ul>
+      <li>Простой современный дизайн</li>
+      <li>Защита покупателя и продавца</li>
+      <li>Распознавание вещей по фото, ссылка на сайт производителя и обзоры</li>
+      <li>Предсказание падения стоимости стоимости товара при продаже, скажем, через год.</li>
+      <li>Геолокация</li>
+      <li>Встроенный голосовой мессенджер (чтобы не палить номер телефона)</li>
+      <li>Бартер вещей, временный обмен вещами, аренда вещей</li>
+
+    </ul>
+    <br>
+    <h2>Promotion</h2>
+    <ul>
+      <li>SMM</li>
+      <li>SEO</li>
+      <li>Виральность</li>
+      <li>Баннеры</li>
+      <li>Партнерские программы</li>
+      <li>Offline-реклама</li>
+    </ul>
+
+  </body>
+</html>
